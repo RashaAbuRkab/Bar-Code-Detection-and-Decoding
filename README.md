@@ -5,7 +5,7 @@
 This project aims to use image processing techniques to analyze images and extract information, such as detecting barcodes and identifying the largest rectangular contour in an image. To implement these tasks, libraries such as OpenCV, NumPy, matplotlib, and pyzbar were used.
 
 ## Key Steps of the Project
-![Screenshot 2025-01-26 144603](https://github.com/user-attachments/assets/e8e291e1-456c-4db7-8c77-2ec27a15580d)
+![Screenshot 2025-01-30 195200](https://github.com/user-attachments/assets/7840e488-372c-4a46-959d-fe00457ea985)
 
 - Reading the Image
 - Resizing the Image
@@ -13,7 +13,7 @@ This project aims to use image processing techniques to analyze images and extra
 - Calculate the Gradient Using Sobel Operators
 - Compute Gradient Magnitude
 - Apply Gaussian Blur
-- Apply Otsu's Thresholding
+- Apply Adaptive Thresholding
 - Perform Morphological Operations
 - Find Contours
 - Draw the Largest Contour
@@ -34,8 +34,8 @@ This project aims to use image processing techniques to analyze images and extra
 - The gradient is calculated using Sobel filters (`cv2.Sobel`).
 - The gradient magnitude is computed and converted to an 8-bit image.
 - Gaussian blur is applied to reduce noise.
-- Automatic thresholding (Otsu's Thresholding) is applied to separate the background from the foreground.
-- Morphological operations such as closing, erosion, and dilation are applied to refine the contours.
+- Adaptive Thresholding is applied to separate the background from the foreground.
+- Morphological operations such as closing and erosion are applied to refine the contours.
 
 ### Finding the Largest Rectangular Contour
 - Contours are detected in the image using `cv2.findContours`.
@@ -72,9 +72,7 @@ The project was successfully implemented using basic and advanced image processi
 This project can be a foundation for developing more advanced applications in image processing and computer vision, such as automated barcode scanning systems or object detection tools.
 
 ## Project Structure
-
-- `functions.py`: Contains all the functions that perform operations on the image.
-- `BarCode_Detection_And_Decoding.ipynb`: Contains an explanation of all the functions with testing the code on all the images attached in the `input_image` folder.
+- `BarCode_Detection_And_Decoding.ipynb`: Contains all the functions with testing the code on all the images attached in the `input_image` folder.
 - `requirements.txt`: Contains the libraries used in the project.
 
 ## Installation
