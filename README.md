@@ -1,4 +1,4 @@
-# Bar-Code Detection and Decoding
+# Bar-Code Detection and Decoding ║▌║█║▌│║▌║▌█
 
 ## Introduction
 
